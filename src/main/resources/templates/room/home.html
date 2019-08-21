@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Front Web</title>
+<script type="text/javascript" th:src="@{/js/hello.js}"></script>
+</head>
+<body>
+	<div>
+		<h3>ui.home : [[${@environment.getProperty('ui.home')}]] </h3>
+		<h4>hello home!</h4>
+		<p>it's test page</p>
+		
+		<script type="text/javascript">
+			console.log('[[${@environment.getProperty('ui.home')}]]');
+		</script>
+	</div>
+</body>
+</html>

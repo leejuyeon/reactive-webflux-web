@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html th:lang="${#locale.language}"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+ >
+<head>
+<title>Front Web</title>
+<script type="text/javascript" th:src="@{/js/hello.js}"></script>
+</head>
+<body>
+	<div>
+		<h3>ui.home_naver : [[${@environment.getProperty('ui.home')}]] </h3>
+		<h4>hello home!</h4>
+		<p>it's test page</p>
+		
+		
+		[[${@templateComponentService.test()}]]
+		
+		
+		<script type="text/javascript">
+			console.log('[[${@environment.getProperty('ui.home')}]]');
+		</script>
+	</div>
+</body>
+</html>

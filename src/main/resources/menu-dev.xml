@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menuList>
+<menuList>
+	<menu url="/">
+		<project>webflux</project>
+		<baseUrl>webflux/v1</baseUrl>
+		<folder>webflux</folder>
+		<idx>index</idx>
+		<css>main</css>
+		<meta>
+			<title>webflux</title>
+		</meta>
+		<isEditor>false</isEditor>
+	</menu>
+    <menu url="/download/index">
+        <idx>download</idx>
+        <menu>download</menu>
+        <css>download</css>
+        <meta>
+            <title>다운로드</title>
+        </meta>
+    </menu>
+</menuList>
